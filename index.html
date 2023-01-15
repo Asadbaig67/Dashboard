@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+        <div class="container-fluid">
+
+            <!-- offcanvas button -->
+
+            <!-- <button class="btn btn-light mx-3" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <i class="bi bi-list"></i>
+            </button> -->
+
+            <!-- offcanvas button -->
+            <a class="navbar-brand ms-5 fw-bold text-info text-uppercase fs-4" href="#">
+                <img src="./face1.jpg" alt="" width="30" height="30" class="d-inline-block align-text-top">
+                Dashborad
+            </a>
+            <!-- <a class="navbar-brand fw-bold text-uppercase ms-5 text-info" href="#">Dashborad</a> -->
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex ms-auto " role="search">
+                    <div class="input-group ">
+                        <input type="text" class="form-control " placeholder="Search" aria-label="Search"
+                            aria-describedby="button-addon2">
+                        <button class="btn navbar-btntop bg-info me-5" type="button" id="button-addon2"><i
+                                class="bi bi-search"></i></button>
+                    </div>
+                </form>
+                <i class="bi bi-bell nav-icons px-3 fs-3"></i>
+                <i class="bi bi-envelope nav-icons px-3 fs-3"></i>
+                <i class="bi bi-house-door nav-icons px-3 fs-3"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- nav bar -->
+
+    <!-- main body inside div container -->
+    <div class="container-fluid">
+
+        <!-- offcanvas -->
+        <div class="offcanvas bg-light offcanvas-start  " tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <!-- <div class="offcanvas-header">
+            <h5 class="offcanvas-title fw-bold mb-0" id="offcanvasExampleLabel">Asadulhaq</h5>
+
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div> -->
+            <h3 class="fw-bold px-4 pt-4 text-uppercase">Admin</h3>
+            <small class="fw-light px-4 pt-0 text-muted small">admin@gmail.com</small>
+            <div class="offcanvas-body ">
+                <!-- button no-1 -->
+                <div class="dropdown mt-2">
+                    <button id="first-btn" class="btn btn-lg bg-light active" type="button">
+                        <i class="bi bi-house-door-fill me-3 my-3"></i> Dashborad
+                    </button>
+                </div>
+
+                <!-- button no-2 -->
+                <div class="dropdown mt-2">
+                    <button class="btn btn-lg sidebar-btns bg-light" type="button" id="dropdownMenuButton">
+                        <i class="bi bi-grid-fill  me-3 my-3"></i> Page Layouts
+                    </button>
+                </div>
+
+                <!-- button no-3 -->
+                <div class="dropdown mt-2">
+                    <button class="btn btn-lg sidebar-btns bg-light " type="button" id="dropdownMenuButton">
+                        <i class="bi bi-layout-sidebar-inset me-3 my-3"></i> Side-bar Layouts
+                    </button>
+                </div>
+
+                <!-- button no-4 -->
+                <div class="dropdown mt-2">
+                    <button class="btn btn-lg sidebar-btns bg-light " type="button" id="dropdownMenuButton">
+                        <i class="bi bi-border me-3 my-3"></i> Basic UI Elements
+                    </button>
+                </div>
+
+                <!-- button no-5 -->
+                <div class="dropdown mt-2">
+                    <button class="btn btn-lg sidebar-btns bg-light " type="button" id="dropdownMenuButton">
+                        <i class="bi bi-card-text me-3 my-3"></i> Advanced UI
+                    </button>
+                </div>
+
+                <!-- button no-6 -->
+                <div class="dropdown mt-2">
+                    <button class="btn btn-lg sidebar-btns bg-light " type="button" id="dropdownMenuButton">
+                        <i class="bi bi-chat-right-text-fill me-3  my-3"></i> Pop-ups
+                    </button>
+
+                </div>
+
+                <!-- button no-7 -->
+                <div class="dropdown mt-2">
+                    <button class="btn btn-lg sidebar-btns bg-light " type="button" id="dropdownMenuButton">
+                        <i class="bi bi-bell  me-3 my-3"></i> Notifications
+                    </button>
+                </div>
+
+                <!-- button no-8 -->
+                <div class="dropdown mt-2">
+                    <button class="btn btn-lg sidebar-btns bg-light" type="button" id="dropdownMenuButton">
+                        <i class="bi bi-caret-left-square-fill me-3 my-3"></i> Icons
+                    </button>
+                </div>
+
+                <!-- button no-9 -->
+                <div class="dropdown mt-2">
+                    <button class="btn btn-lg sidebar-btns bg-light" type="button" id="dropdownMenuButton">
+                        <i class="bi bi-ui-checks me-3 my-3"></i> Forms
+                    </button>
+                </div>
+
+                <!-- button no-10 -->
+                <div class="dropdown mt-2">
+                    <button class="btn btn-lg sidebar-btns bg-light" type="button" id="dropdownMenuButton">
+                        <i class="bi bi-file-earmark-text me-3 my-3"></i> Text-Editors
+                    </button>
+                </div>
+
+                <!-- button no-11 -->
+                <div class="dropdown mt-2">
+                    <button class="btn btn-lg sidebar-btns bg-light " type="button" id="dropdownMenuButton">
+                        <i class="bi bi-file-code-fill me-3 my-3"></i> Code-Editors
+                    </button>
+                </div>
+
+                <!-- button no-12 -->
+                <div class="dropdown mt-2">
+                    <button class="btn btn-lg sidebar-btns bg-light" type="button" id="dropdownMenuButton">
+                        <i class="bi bi-bar-chart-line-fill me-3 my-3"></i> Charts
+                    </button>
+                </div>
+
+                <!-- button no-13 -->
+                <div class="dropdown mt-2">
+                    <button class="btn btn-lg sidebar-btns bg-light" type="button" id="dropdownMenuButton">
+                        <i class="bi bi-table me-3 my-3"></i> Tables
+                    </button>
+                </div>
+
+                <!-- button no-14 -->
+                <div class="dropdown mt-2">
+                    <button class="btn btn-lg sidebar-btns bg-light" type="button" id="dropdownMenuButton">
+                        <i class="bi bi-geo-alt-fill me-3 my-3"></i> Maps
+                    </button>
+                </div>
+
+            </div>
+        </div>
+        <!-- offcanvas -->
+
+
+        <!-- main area displaying cards -->
+        <main class="mt-5 pt-3">
+            <div class="container-fluid">
+
+                <!-- row no-1 start -->
+                <div class="row">
+                    <div class="col-md-12 fw-bold fs-1">
+                        Your Custom Dashborad!
+                    </div>
+                </div>
+                <!-- row no-1 start -->
+
+                <!-- row no-2 start -->
+                <div class="row pt-3">
+                    <div class="col-sm-12 col-md-6 col-lg-4 ">
+                        <div class="card bg-light border-light">
+                            <div class="card-body ">
+                                <h4 class="card-title "> Payments</h4>
+                                <div class="img_container">
+                                    <i class="bi bi-cash-coin  fs-1"></i>
+                                </div>
+                                <h1 class="fw-bord">$9,500.00</h1>
+                                <small class="card-text text-muted p-0 tex text-small"><span
+                                        class="text-success fw-bold fs-2">+5% </span> increase
+                                    last month</small>
+                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card bg-light border-light">
+                            <div class="card-body">
+                                <h4 class="card-title">Revenue</h4>
+                                <div class="img_container">
+                                    <i class="bi bi-bank fs-1"></i>
+                                </div>
+                                <h1>$240.00</h1>
+                                <small class="card-text text-muted p-0 tex text-small"><span
+                                        class="text-success fw-bold fs-2">+30% </span> increase
+                                    last month</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card bg-light border-light">
+                            <div class="card-body">
+                                <div>
+                                    <h4 class="card-title">Total Orders</h4>
+                                    <div class="img_container">
+                                        <i class="bi bi-cart-plus fs-1"></i>
+                                    </div>
+                                    <h1>145</h1>
+                                    <small id="Row-1-small" class="card-text text-muted p-0 tex text-small"><span
+                                            class="text-success fw-bold fs-2">+36% </span> increase
+                                        last month</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- row no-2 End -->
+
+                <!-- row no-3 start -->
+                <div class="row pt-3">
+                    <div class="col-sm-4">
+                        <div class="card bg-light border-light">
+                            <div class="card-body">
+                                <div>
+                                    <h4 class="card-title">Cash Deposits</h4>
+                                    <div class="img_container">
+                                        <i class="bi bi-currency-bitcoin fs-1"></i>
+                                    </div>
+                                    <h1>$1.7M</h1>
+                                    <small id="Row-1-small" class="card-text text-muted text-small"><span
+                                            class="text-danger fw-bold fs-2">+54.1% </span> less
+                                        earnings</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card bg-light border-light">
+                            <div class="card-body">
+                                <div>
+                                    <h4 class="card-title">Invested Dividents</h4>
+                                    <div class="img_container">
+                                        <i class="bi bi-mortarboard fs-1"></i>
+                                    </div>
+                                    <h1>$9M</h1>
+                                    <small id="Row-1-small" class="card-text text-muted text-small">Grow Rate<span
+                                            class="text-info fw-bold fs-2">+54.1% </span></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card bg-light border-light">
+                            <div class="card-body">
+                                <div>
+                                    <h4 class="card-title">Capital Gains</h4>
+                                    <div class="img_container">
+                                        <i class="bi bi-building fs-1"></i>
+                                    </div>
+                                    <h1>$536</h1>
+                                    <small id="Row-1-small" class="card-text text-muted text-small">Increased by<span
+                                            class="text-warning fw-bold fs-2">+7.35% </span></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- row no-3 start -->
+
+                <!-- Charts in Row 4 -->
+                <div class="row mt-3 bg-light mx-2">
+                    <div class="col-sm-8 ">
+                        <canvas id="myownChart" width="400" height="180"></canvas>
+                    </div>
+                    <div class="col-sm-4 ">
+                        <canvas id="polarChart" width="100" height="0"></canvas>
+                    </div>
+                </div>
+                <!-- Charts in Row 4 -->
+
+                <!-- Charts in Row 5 -->
+                <!-- <div class="row mt-3 bg-light">
+                <div class="col-sm-6">
+                    <canvas id="donutchart" width="300" height="50"></canvas>
+                </div>
+            </div> -->
+                <!-- Charts in Row 5 -->
+
+                <!-- table row 4 -->
+                <div class="row mt-4 mb-4  ">
+                    <div class="col-sm-12 grid-margin">
+                        <div class="card border-light bg-light">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <p class="card-title mb-0">Sales overview</p>
+                                    <p class="mb-0">Download Statement</p>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead class="bg-light-variant">
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Customer</th>
+                                                <th>Start Date</th>
+                                                <th>End Date</th>
+                                                <th>Total Return</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-info">5420</td>
+                                                <td class="font-weight-medium">Invested Schemes</td>
+                                                <td>Nov 04, 2019</td>
+                                                <td>14 Oct 2020</td>
+                                                <td class="font-weight-medium">$499.00</td>
+                                                <td class="text-danger fw-bold">Due</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-info">5430</td>
+                                                <td class="font-weight-medium">Analytic Reports</td>
+                                                <td>13 Oct 2020</td>
+                                                <td>14 Oct 2020</td>
+                                                <td class="font-weight-medium">$199.00</td>
+                                                <td class="text-success fw-bold">Paid</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-info">5440</td>
+                                                <td class="font-weight-medium">Enterprise Plan</td>
+                                                <td>Nov 04, 2019</td>
+                                                <td>16 Apr 2020</td>
+                                                <td class="font-weight-medium">$399.00</td>
+                                                <td class="text-danger fw-bold">Due</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-info">5450</td>
+                                                <td class="font-weight-medium">Pro Plan</td>
+                                                <td>13 Oct 2020</td>
+                                                <td>14 Oct 2020</td>
+                                                <td class="font-weight-medium">$299.00</td>
+                                                <td class="text-success fw-bold">Paid</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-info">5460</td>
+                                                <td class="font-weight-medium">Invested Schemes</td>
+                                                <td>Nov 04, 2019</td>
+                                                <td>28 Apr 2020</td>
+                                                <td class="font-weight-medium">$199.00</td>
+                                                <td class="text-danger fw-bold">Due</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-info">5470</td>
+                                                <td class="font-weight-medium">Latest Tickets</td>
+                                                <td>13 Oct 2020</td>
+                                                <td>14 Oct 2020</td>
+                                                <td class="font-weight-medium">$599.00</td>
+                                                <td class="text-success fw-bold">Paid</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-info">5480</td>
+                                                <td class="font-weight-medium">Latest Plans</td>
+                                                <td>13 jan 2020</td>
+                                                <td>24 march 2020</td>
+                                                <td class="font-weight-medium">$599.00</td>
+                                                <td class="text-success fw-bold">Paid</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-info">5490</td>
+                                                <td class="font-weight-medium">Assets</td>
+                                                <td>1 june 2020</td>
+                                                <td>14 july 2020</td>
+                                                <td class="font-weight-medium">$599.00</td>
+                                                <td class="text-success fw-bold">Due</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-info">5500</td>
+                                                <td class="font-weight-medium">Travel</td>
+                                                <td>2 July 2020</td>
+                                                <td>10 July 2020</td>
+                                                <td class="font-weight-medium">$599.00</td>
+                                                <td class="text-success fw-bold">Paid</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-info">5510</td>
+                                                <td class="font-weight-medium">Profits</td>
+                                                <td>5 March 2020</td>
+                                                <td>14 March 2020</td>
+                                                <td class="font-weight-medium">$10000.00</td>
+                                                <td class="text-danger fw-bold">Due</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-info">5520</td>
+                                                <td class="font-weight-medium">Entertainments</td>
+                                                <td>1 Sep 2020</td>
+                                                <td>20 Sep 2020</td>
+                                                <td class="font-weight-medium">$1756.00</td>
+                                                <td class="text-success fw-bold">Paid</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-info">5530</td>
+                                                <td class="font-weight-medium">Labour</td>
+                                                <td>2 Aug 2020</td>
+                                                <td>14 Aug 2020</td>
+                                                <td class="font-weight-medium">$200.00</td>
+                                                <td class="text-success fw-bold">Paid</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-info">5540</td>
+                                                <td class="font-weight-medium">Sponsorships</td>
+                                                <td>13 Dec 2020</td>
+                                                <td>19 Dec 2020</td>
+                                                <td class="font-weight-medium">$2000.00</td>
+                                                <td class="text-success fw-bold">Paid</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- table row 4 -->
+
+
+            </div>
+        </main>
+        <!-- main area displaying cards -->
+    </div>
+    <!-- main body inside div container -->
+
+    <!-- js file for bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <!-- js file for bootstrap -->
+
+    <!-- js file for charts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- js file for charts -->
+
+    <!-- custom js file -->
+    <script src="./script.js"></script>
+    <!-- custom js file -->
+
+</body>
+
+</html>

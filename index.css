@@ -1,0 +1,97 @@
+.navbar-btntop:hover {
+    border: 1px solid rgb(13, 202, 240) !important;
+    background-color: none !important;
+}
+
+.offcanvas {
+    width: 270px !important;
+    top: 56px !important;
+    transform: none !important;
+    visibility: visible !important;
+}
+
+.btn-light {
+    background-color: white !important;
+    border: none !important;
+    color: black !important;
+
+}
+
+main {
+    margin-left: 270px;
+}
+
+.img_container {
+    position: relative;
+}
+
+
+.bi-cash-coin,
+.bi-bank,
+.bi-cart-plus,
+.bi-mortarboard,
+.bi-building,
+.bi-currency-bitcoin {
+    position: absolute;
+    top: 11%;
+    bottom: 62px;
+    left: 84%;
+    color: black;
+}
+
+.active {
+    font-weight: bold !important;
+    /* font-size: larger !important; */
+    color: rgb(13, 202, 240) !important;
+    border: none !important;
+}
+
+.btn:hover {
+
+    /* font-weight: bold !important; */
+    border: none !important;
+
+}
+
+.sidebar-btns:hover {
+    color: rgb(13, 202, 240) !important;
+}
+
+img {
+    border-radius: 50%;
+}
+
+/* .btn:focus{
+    border: none !important;
+} */
+.btn {
+    border: none !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+    height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #0dcaf0;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #1edaff;
+}
+
+.nav-icons:hover {
+    cursor: pointer;
+    color: #0dcaf0;
+}
